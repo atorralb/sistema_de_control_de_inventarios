@@ -1,0 +1,27 @@
+Para ver los reportes necesitas:
+1.- JasperStudio 2 http://sourceforge.net/projects/jasperstudio/files/JaspersoftStudio-2.0.1/
+	a) Escoge la version para tu sistema operativo
+	b) Instala Jasperstudio 2 y procede al siguiente paso
+
+2.-MySQL Connector http://dev.mysql.com/downloads/connector/j/
+	a) Descarga el archivo ".zip"
+	b) Abre "mysql-connector-java-5.1.23.zip"
+	c) extrae "mysql-connector-java-5.1.23-bin.jar" a "C:\"
+
+3.- Abre JasperStudio2 
+	A) ve a "file->new->Data Adapter"
+	B) Dale click en el boton "Advanced"
+	C) Dale check en "Link to file in the system"
+	D) Ahora ve en donde se encuentra "mysql-connector-java-5.1.23-bin.jar" (C:\)
+	E) Click "Next"
+	F) Escoge "JDBC CONNECTION"
+	G) CLICK "NEXT"
+	H) Donde dice "Name" escribe "tunegocio"
+	I) Donce dice "JDBC" escoge "com.mysql.jdbc.Driver"
+	J) Donce dice "JDBC url" escribe jdbc:mysql://unhe.info/tunegocio (reemplaza "tunegocio" con el nombre de la base de datos->esta en tu tablero)
+	K) Donde dice "username" escribe tu nombre de usuario (el que usas para conectarte a la base de datos)
+	L) Donce dice "Password" escribe el password que usas para conectarte a la base de datos (nota, solo el creador de la cuenta puede conectarse)
+	M) Click "Finish"
+	N) Busca donde dice "Driver Classpath" y dale click
+	ñ) Click el boton "Add" y busca el archivo  "mysql-connector-java-5.1.23-bin.jar" (C:\)
+	O) Click Test para ver si esta funcionando... si no funciona llama a soporte tecnico

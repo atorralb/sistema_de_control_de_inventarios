@@ -1,0 +1,144 @@
+<html>
+<br>
+EL servidor APACHE es conocido mundialmente por su estabilidad
+y de acuerdo con el servicio de encuestas Netcraft, mas del
+60 porciento de servidores web usan Apache. Y lo que lo hace
+aun mas estable es su licencia GPL que establece que Apache
+puede ser distribuido gratuitamente o por ganancia siempre
+y cuando mantenga su codigo fuente libre al aire. El codigo
+fuente es la descripcion detallada de cada parte del servidor.
+Esto  hace que muchas personas conocedoras en programacion
+desde ingenieros en sistemas hasta ociosos contribuyan al codigo
+para hacer Apache mas potente, mas estable, y mas robusto. Otro
+detalle importante que hay que conciderar es que la informacion de
+este servidor se encuentra en cualquier sitio web ya que si te encuentras
+atorado en alguna parte con el servidor, puedes consultar un sitio red y
+rapidamente encontraras solucion a tu problema.
+<p>
+El servidor MySQL es una base de datos tambien bajo la licencia GPL y
+es comparada entre las mejores como ORACLE o INFORMIX las cuales
+son comerciales y su instalaciona varia entre los miles de dolares.
+MySQL(My Structured Query Language), al igual que apache, corren
+bajo distintos sistemas operatimos como Linux, Unix, Windows, McIntosh,
+o freeBSD.
+PHP es un lenguage de programacion que se uso en esta base de datos. PHP
+se utiliza como una "Interface de puerta comun" o conocido 
+en ingles como CGI (Common Gateway Interface) por sus siglas.
+Basicamente lo que hace es hacer preguntas o insertar informacion 
+al servidor mysql, obtener los resultados, y mostrar la informacion 
+obtenida atraves  del servidor apache.
+<p>
+<b>INSTALACION</b>
+<br>
+Primero debe instalar el programa llamado "XAMPP.exe" (se encuentra en su cd de respaldo). Este programa
+instalara automaticamente los servidores Apache, MySQL, y los lenguages
+de programacion PHP y PERL. 
+Aqui se muestra una foto de como accesar el servidor. 
+<img src="../images/1.jpg"></img>
+<p>
+Si da click aparecera la siguiente pantalla.
+<p>
+<img src="../images/2.jpg"></img>
+<p>
+
+Ahora hay que copiar la base de datos a su directorio original
+para que MySQL los reconozca. Esto incluye estructura y datos.
+Simplemente lo que tiene que hacer es copiar el directorio "inventarioxx" (el
+cual se encuentra en su cd de respaldo. Ver la seccion "como hacer respaldo de la base de datos"
+Las "xx" significan la fecha del inventario o cualquier otro numero. Hay que cambiar
+el nombre al directorio  "inventaioxx" a "inventario" solamente sin numeros o extras y sin las comillas)
+a este directorio "C:\apachefriends\xampp\mysql\data\"
+<p>
+<img src="../images/6.jpg"></img>
+<p>
+
+Ahora  hay que copiar los "scripts" que hacen correr al programa.
+Copia los directorios "administracion", "catalogos", "movimientos" "images" al directorio
+"C:\apachefriends\xampp\htdocs"
+
+Para que puedas iniciar automaticamente just en inicio copia los archivos
+"dropdowmenu.js", "example.css", "gui.css", "sticky.css" al directorio
+"C:\apachefriends\xampp\htdocs".
+
+Ahora copia el archivo "index.html" al directorio "C:\apachefriends\xampp\htdocs"
+Te va preguntar si quieres remplazar el archivo. Click si o aceptar para sobreescribir el archivo.
+
+Si no tienes instalado el explorador Netscape 6, ejecuta el archivo "netscape6setup.exe".
+Puedes usar Internet Explorer pero es mas falloso que Netscape, por eso
+es recomendable instalar netscape.
+
+Despues de haber instalado Netscape, abre netscape y escribe en 
+la barra de direccion "localhost" como muestra la foto.
+<p>
+<img src="../images/7.jpg"></img>
+<p>
+<p>
+
+<b>COMO IMPRIMIR REPORTES DESDE MSACCESS</b>
+<p>
+Ahora si quieres imprimir reportes desde MsAccess tienes que instalar 
+el programa que dice "MyODBC-standard-3.51.9-win.exe"
+<br>
+Despues dirigase a "panel de control". Ahi presione en  "rendimiento y mantenimiento"
+<p>
+<img src="../images/8.jpg"></img>
+<p>
+y haga click en "mantenimiento y redimiento"
+<p>
+<img src="../images/9.jpg"></img>
+<p>
+despues haga click "origenes de datos (ODBC)"
+<p>
+<img src="../images/10.jpg"></img>
+<p>
+desde la opcion DSN del sistema, haga click en el boton de "agregar"
+<p>
+<img src="../images/11.jpg"></img>
+<p>
+seleccione donde diga "MySQL ODBC 3.51 driver" y presione el boton de finalizar
+<p>
+<img src="../images/12.jpg"></img>
+<p>
+aparecera el siguiente panel. Escriba los datos exactamente como aparecen en la foto
+<p>
+<img src="../images/13.jpg"></img>
+<p>
+<p>
+Copie el archivo "reportes.mdb" (el cual se encuentra en su cd de respaldo) al "escritorio"
+<br>
+una vez copiado, abralo y presione en "archivo"->"obtener datos externos"->"vincular tablas"
+como muestra la foto.
+<p>
+<img src="../images/14.jpg"></img>
+<p>
+desde tipo de archivo Selecciona "ODBC databases" como muestra la foto
+<p>
+<img src="../images/15.jpg"></img>
+<p>
+cilck en inventario.dsn. y selecciona todo y click aceptar
+Eso es todo para empezar a utilizar la base de datos. 
+<p>
+<b>COMO CONECTARSE DESDE DIFERENTES COMPUTADORAS</b>
+<p>
+Desde donde instalo el archivo "xampp.exe"  presione en "Inicio"->"Mis Sitios Red"->"ver conexiones de red"
+<p><img src="../images/3.jpg"></img><p>
+
+y entonces presione con el boton derecho sobre el icono "conexion de area local" aparecera un menu y haga
+click sobre la opcion "estado"
+<p>
+<img src="../images/4.jpg"></img>
+<p>
+ y presione sobre la opcion de "compatibilidad". Ahi vera una lista de de detalles
+pero la mas importante es la que dice "DIRECCION IP:" Ese numero lo tendra que escribir en el explorador (netscape)
+desde otra computadora conectada a la red para poder accesar la pagina de inventario.
+<p>
+<img src="../images/5.jpg"></img>
+<p>
+<p>
+<b>COMO HACER RESPALDO DE LA BASE DE DATOS</b>
+<p>
+Facil. Solo copie el directorio "c:\apachefriends\xampp\mysql\data\inventario" a 
+donde guste.
+<p>
+<img src="../images/6.jpg"></img>
+<p>

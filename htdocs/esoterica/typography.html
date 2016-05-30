@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html dir="ltr" lang="en-US"> <!--<![endif]-->
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /> 
+
+<title>Typography :: Caffeine Admin Template</title>
+
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="css/icons.css" type="text/css" />
+<link rel="stylesheet" href="css/forms.css" type="text/css" />
+<link rel="stylesheet" href="css/tables.css" type="text/css" />
+<link rel="stylesheet" href="css/ui.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/responsiveness.css" type="text/css" />
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<!-- Knob -->
+<script type="text/javascript" src="js/jquery.knob.js"></script>
+
+<!-- Caffeine custom JS -->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> 
+<!--[if lte IE 7]> <script src="js/IE8.js" type="text/javascript"></script> <![endif]--> 
+<!--[if lt IE 7]> <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/> <![endif]--> 
+
+</head>
+
+<body id="index" class="home">
+	
+    <div id="loading-block"></div>
+    
+    	<div id="container">
+    
+        <!-- Header -->
+        <header id="header">
+            <figure id="logo"><a href="dashboard.html" class="logo"></a></figure>
+            <section id="general-options">
+            	<a href="#" class="settings tipsy-header" title="Settings"></a>
+                <a href="#" class="users tipsy-header" title="Users"></a>
+                <a href="#" class="messages tipsy-header" title="Messages"></a>
+            </section>
+            <section id="userinfo">
+            	<span class="welcome">Welcome <strong>John Doe</strong>. It's nice having you back</span>
+                <span class="last-login">Last login on June 1st at 11:24hs</span>
+                <div class="profile">
+                	<div class="links">
+                        <a href="#">Profile</a>
+                        <a href="#">Inbox</a>
+                        <a href="login.html" class="logout">Logout</a>
+                    </div>
+                	<img src="img/profile-pict.jpg" alt="John Doe">
+                </div>
+            </section>
+            <section id="responsive-nav">
+                <select id="nav_select">
+                	<option value="">Navigate</option>
+                	<option value="dashboard.html">Dashboard</option>
+                    <option value="form-elements.html">Form Elements</option>
+                </select>
+            </section>
+        </header> <!-- /Header -->
+        
+        <div class="clear"></div>		
+        
+        <!-- Sidebar -->
+        <nav id="sidebar">
+        	<div class="sidebar-top"></div>
+            
+            <h3>Navigate</h3>
+            
+            <!-- Nav menu -->
+            <ul class="nav">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="tables.html">Tables &amp; Charts</a></li>
+                <li><a href="#">Forms</a>
+                	<ul class="submenu">
+		                <li><a href="form-elements.html">Form elements</a></li>
+                        <li ><a href="form-validation.html">Form validation</a></li>
+                    </ul>
+                </li>
+                <li><a href="grid.html">Grid</a></li>
+                
+                <li><a href="#">UI / UX</a>
+                    <ul class="submenu">
+                    	<li><a href="ui.html">General UI</a></li>
+               			<li><a href="icons.html">Icons</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="file-upload.html">File upload</a></li>
+                        <li><a href="contact-list.html">Contact list</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="typography.html">Typography</a></li>
+                <li ><a href="gallery.html">Gallery</a></li>
+            </ul> <!-- /Nav menu -->
+            
+            <div class="blocks-separator"></div>
+            
+            <h3>Stats</h3>
+            <section class="widgets">
+                
+                <!-- Sidebar Widgets -->
+                <div class="arrow-up">
+                    <span class="title">Sales</span>
+                    <span class="perc"><span data-value="65">0</span>%</span>
+                </div>
+                
+                <div class="arrow-down">
+                    <span class="title">Bounce</span>
+                    <span class="perc"><span data-value="29">0</span>%</span>
+                </div>
+                
+                <div class="arrow-right">
+                    <span class="title">Clients</span>
+                    <span class="perc"><span data-value="0">0</span>%</span>
+                </div>
+                
+                <div class="line-separator"></div>
+                
+                <div class="one-half center">
+	                <input class="knob" data-width="89" data-height="89" data-fgColor="#bee058" data-thickness=".2" data-readOnly="true" value="35" data-value="35">
+                    <span class="full-width center">Disk Space</span>
+                </div>
+                
+                <div class="one-half center">
+	                <input class="knob" data-width="89" data-height="89" data-fgColor="#5479aa" data-thickness=".2" data-readOnly="true" value="83" data-value="83">
+                    <span class="full-width center">Bandwidth</span>
+                </div>
+                <!-- /Sidebar Widgets -->
+                
+                <div class="clear"></div>
+                
+            </section>
+        </nav> <!-- Sidebar -->
+
+        <section id="playground">
+        	
+            <!-- Breadcrumb -->
+            <div class="three-fourths breadcrumb">
+            	<span><a href="#" class="icon entypo home"></a></span>
+                <span class="middle"></span>
+                <span><a href="#">UI &amp; UX</a></span>
+                <span class="middle"></span>
+                <span><a href="#">Typography Examples</a></span>
+                <span class="end"></span>
+            </div> <!-- /Breadcrumb -->
+            
+            <!-- Search box -->
+            <div class="one-fourth searchbar">
+            	<div class="box no-bg">
+	            	<div class="search-box closed"><input type="text" /><span class="icon awesome search"></span></div>
+                </div>
+            </div> <!-- /Search box-->
+            
+            <div class="clear"></div>
+            
+            <section class="full-width">
+            	<div class="box no-bg">
+	            	<h1>Typography</h1>
+    	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et faucibus metus. Integer non libero sed libero pharetra pulvinar. In orci nunc, imperdiet ut elementum eu, pellentesque at velit. Ut cursus sem vel tortor aliquam nec interdum libero venenatis. Mauris scelerisque congue consequat. Nulla facilisi. Etiam quis libero diam, sit amet aliquet quam. Suspendisse varius rhoncus metus eu gravida. Vivamus posuere turpis sed magna fermentum sit amet ultricies enim porttitor. Nulla facilisi. Maecenas sagittis consectetur purus eget cursus. Integer posuere turpis vitae odio aliquet accumsan a sit amet diam. Integer quis lectus ligula, in euismod lectus. Fusce a eros nisi. In massa metus, luctus ac egestas sed, lacinia in lectus. Nulla non velit ipsum.</p>
+                </div>
+            </section>
+            
+            <div class="clear"></div>
+            
+            
+            
+            <section class="one-half">
+            	<div class="box no-bg">
+                	
+                    <section class="contents">
+                        <h3>Example paragraph</h3>
+                        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Suspendisse vel dolor massa. Sed venenatis ultricies orci sed vestibulum. <strong>In hac habitasse platea dictumst. Suspendisse arcu tortor, dignissim at aliquet eu, convallis ut risus.</strong> Cras eu lacus quam, vitae tincidunt libero. <em>Vivamus tempor ornare pretium</em>. Praesent quis magna in lorem vehicula imperdiet. Aliquam eget blandit magna. <a href="#">Cras quis risus mauris. Nam vulputate placerat ante at volutpat</a>. Vestibulum mattis tellus odio, eu sollicitudin nibh. Nullam eget leo erat. Phasellus condimentum, ligula nec cursus vestibulum, <span class="strike">leo lectus lobortis ante, sed imperdiet tellus ante nec enim</span>.</p>
+                       	
+                        <div class="line-separator"></div>
+                        
+                        <h3>Highlights</h3>
+                        <p>Suspendisse potenti. <span class="highlight yellow">Vivamus cursus</span> sapien vitae nibh <span class="highlight red">tempor tincidunt</span> venenatis nisi volutpat. Aliquam vehicula ligula vitae justo semper commodo. Praesent ultrices commodo mi, a suscipit elit viverra eu. Aenean blandit arcu quis <span class="highlight green">libero auctor</span> nec vulputate eros vulputate. <span class="highlight blue">Curabitur sed erat sem</span>, sit amet iaculis sapien. Aliquam condimentum turpis ut eros elementum scelerisque. Nam justo elit, facilisis vitae vulputate quis, bibendum eu ipsum. <span class="highlight black">Maecenas vel consequat</span> risus. Morbi faucibus tincidunt ultrices. Vestibulum in mi eu dolor <span class="highlight orange">laoreet egestas</span> vitae nec nibh. In dignissim dignissim malesuada. Sed laoreet consectetur ligula, <span class="highlight pink">non dignissim</span> sem faucibus a. Duis tristique, sem a feugiat ultricies, elit orci elementum ligula, vitae accumsan nisl urna vel sapien. </p>
+                        
+                        <h3>Code</h3>
+<pre>
+&lt;div class="code test"&gt;This is a test&lt;/div&gt;
+&lt;a href="#" class="button"&gt;Bye&lt;/a&gt;
+</pre>
+                    </section>
+
+                </div>
+            </section>
+            
+            <section class="one-half">
+            	<div class="box no-bg">
+                	
+                    <section class="contents">
+                        <h1>Heading 1</h1>
+                        <p>Sed vitae sollicitudin velit. Phasellus eget ultrices ipsum. Nulla lacinia velit non elit porta id mollis nisl pharetra.</p>
+                        <h2>Heading 2</h2>
+                        <p>Sed vitae sollicitudin velit. Phasellus eget ultrices ipsum. Nulla lacinia velit non elit porta id mollis nisl pharetra.</p>
+                        <h3>Heading 3</h3>
+                        <p>Sed vitae sollicitudin velit. Phasellus eget ultrices ipsum. Nulla lacinia velit non elit porta id mollis nisl pharetra.</p>
+                        <h4>Heading 4</h4>
+                        <p>Sed vitae sollicitudin velit. Phasellus eget ultrices ipsum. Nulla lacinia velit non elit porta id mollis nisl pharetra.</p>
+                        <h5>Heading 5</h5>
+                        <p>Sed vitae sollicitudin velit. Phasellus eget ultrices ipsum. Nulla lacinia velit non elit porta id mollis nisl pharetra.</p>
+                        <h6>Heading 6</h6>
+                        <p>Sed vitae sollicitudin velit. Phasellus eget ultrices ipsum. Nulla lacinia velit non elit porta id mollis nisl pharetra.</p>
+                        
+                    </section>
+
+                </div>
+            </section>
+            
+            <div class="clear"></div>
+            <div class="line-separator"></div>
+            
+            <section class="full-width">
+            	<div class="box no-bg">
+                    <div class="one-fifth">
+                    	<h3>Unordered list</h3>
+                    	<ul>
+                        	<li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                        </ul>
+                    </div>
+                    <div class="one-fifth">
+                    	<h3>Ordered list</h3>
+                    	<ol>
+                        	<li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                        </ol>
+                    </div>
+                    <div class="one-fifth">
+                    	<h3>Unstyled list</h3>
+                    	<ul class="no-bullets">
+                        	<li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                            <li>Proin velit sapien, porta id interdum</li>
+                        </ul>
+                    </div>
+                    <div class="one-fifth">
+                    	<h3>List with icons</h3>
+                    	<ul class="no-bullets">
+                        	<li><span class="icon awesome star"></span>Proin velit sapien, porta id interdum</li>
+                            <li><span class="icon awesome star"></span>Proin velit sapien, porta id interdum</li>
+                            <li><span class="icon awesome star"></span>Proin velit sapien, porta id interdum</li>
+                            <li><span class="icon awesome star"></span>Proin velit sapien, porta id interdum</li>
+                            <li><span class="icon awesome star"></span>Proin velit sapien, porta id interdum</li>
+                        </ul>
+                    </div>
+                    <div class="one-fifth">
+                    	<h3>More icons</h3>
+                    	<ul class="no-bullets">
+                        	<li><span class="icon entypo help"></span>Proin velit sapien, porta id interdum</li>
+                            <li><span class="icon awesome volume-up"></span>Proin velit sapien, porta id interdum</li>
+                            <li><span class="icon awesome github"></span>Proin velit sapien, porta id interdum</li>
+                            <li><span class="icon entypo shuffle"></span>Proin velit sapien, porta id interdum</li>
+                            <li><span class="icon meteo cloudy"></span>Proin velit sapien, porta id interdum</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            
+            <div class="clear"></div>
+            <div class="full-width right">
+	<div class="box no-bg">
+    	<div class="line-separator"></div>
+        
+		<span class="copyright">by <a href="http://www.creepypixel.com/" class="creepy-logo fright"></a></span>
+    </div>
+</div>            
+        </section>    </div>
+    
+</body> 
+</html>

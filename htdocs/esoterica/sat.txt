@@ -1,0 +1,24 @@
+firma electronica avanzada vigente
+Tramitar al menos un Certificado de Sello Digital.
+
+Enviar a validar las facturas electrónicas al proveedor autorizado de certificación
+
+ clave CIEC o la FIEL
+ ftp://ftp2.sat.gob.mx/agti_servicio_ftp/cfds_ftp/
+ https://cfdiau.sat.gob.mx/nidp/wsfed/ep?id=SATUPCFDiCon&sid=0&option=credential&sid=0
+
+  Movilidad: factura en donde sea a la hora que sea.
+•    Busca soluciones que permitan a tu contador entender los reportes y la información 
+•    Envía tus facturas por correo electrónico a uno o varios destinatarios
+•    Realizar tus facturas en menos de 1 minuto
+•    Busca una solución que permita hacer una factura en una sola pantalla
+•    Modelo comerciales flexibles: Prepago, Post-Pago o Paga solo las facturas que uses al mes
+•    Soporte telefónico que si “Conteste” y que no te limiten en horas o en “Tickets al mes”
+•    Busca un sistema vía internet para que no dependas de una computadora
+•    Revisa el giro del proveedor: tecnología, fabrica de software o sólamente facturación electrónica
+•    Precio de acuerdo al mercado. Siempre detente a reflexionar si el precio es caro o muy barato.
+•    Que el proveedor te de respaldo de al menos 1 año de tus comprobantes
+•    Administración libre de catálogos: Clientes, proveedores, productos, certificados
+•    Conserva tu identidad y que se te permita adaptar tus facturas con tu logotipo y color
+•    Revisa que instituciones, reconocimientos, premios y referencias respaldan a tu proveedor
+•    Busca un sistema que no te cobre las actualizaciones del SAT

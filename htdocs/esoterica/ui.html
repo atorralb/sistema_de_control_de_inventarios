@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html dir="ltr" lang="en-US"> <!--<![endif]-->
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /> 
+
+<title>User Interface Elements :: Caffeine Admin Template</title>
+
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/jquery.jgrowl.css" type="text/css"/>
+<link rel="stylesheet" href="css/icons.css" type="text/css" />
+<link rel="stylesheet" href="css/forms.css" type="text/css" />
+<link rel="stylesheet" href="css/tables.css" type="text/css" />
+<link rel="stylesheet" href="css/ui.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/responsiveness.css" type="text/css" />
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<!-- jgrowl -->
+<script type="text/javascript" src="js/jquery.jgrowl.min.js"></script>
+<!-- Knob -->
+<script type="text/javascript" src="js/jquery.knob.js"></script>
+<!-- SparkLine -->
+<script type="text/javascript" src="js/jquery.sparkline.js"></script>
+
+<!-- Caffeine custom JS -->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> 
+<!--[if lte IE 7]> <script src="js/IE8.js" type="text/javascript"></script> <![endif]--> 
+<!--[if lt IE 7]> <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/> <![endif]-->  
+
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery('#apprise-1').click(function() {
+			apprise('Hello, this is an alert!', {'animate': true, 'textOk': 'Close me now!'});
+		});
+		jQuery('#apprise-2').click(function() {
+			apprise('This is a confirmation box!', {'animate': true, 'confirm': true}, function(r) {
+				if (r) { alert('you clicked ok'); }
+				else { alert('you clicked cancel'); }
+			});
+		});
+		jQuery('#apprise-3').click(function() {
+			apprise('Enter your name in this input box!', {'animate': true, 'input': true}, function(r) {
+				if (r) { alert('Your name is '+r); }
+				else { alert('You didnt enter your name'); }
+			});
+		});
+	});
+</script>
+
+</head>
+
+<body id="index" class="home">
+	
+    <div id="loading-block"></div>
+    
+    	<div id="container">
+    
+        <!-- Header -->
+        <header id="header">
+            <figure id="logo"><a href="dashboard.html" class="logo"></a></figure>
+            <section id="general-options">
+            	<a href="#" class="settings tipsy-header" title="Settings"></a>
+                <a href="#" class="users tipsy-header" title="Users"></a>
+                <a href="#" class="messages tipsy-header" title="Messages"></a>
+            </section>
+            <section id="userinfo">
+            	<span class="welcome">Welcome <strong>John Doe</strong>. It's nice having you back</span>
+                <span class="last-login">Last login on June 1st at 11:24hs</span>
+                <div class="profile">
+                	<div class="links">
+                        <a href="#">Profile</a>
+                        <a href="#">Inbox</a>
+                        <a href="login.html" class="logout">Logout</a>
+                    </div>
+                	<img src="img/profile-pict.jpg" alt="John Doe">
+                </div>
+            </section>
+            <section id="responsive-nav">
+                <select id="nav_select">
+                	<option value="">Navigate</option>
+                	<option value="dashboard.html">Dashboard</option>
+                    <option value="form-elements.html">Form Elements</option>
+                </select>
+            </section>
+        </header> <!-- /Header -->
+        
+        <div class="clear"></div>		
+        
+        <!-- Sidebar -->
+        <nav id="sidebar">
+        	<div class="sidebar-top"></div>
+            
+            <h3>Navigate</h3>
+            
+            <!-- Nav menu -->
+            <ul class="nav">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="tables.html">Tables &amp; Charts</a></li>
+                <li><a href="#">Forms</a>
+                	<ul class="submenu">
+		                <li><a href="form-elements.html">Form elements</a></li>
+                        <li ><a href="form-validation.html">Form validation</a></li>
+                    </ul>
+                </li>
+                <li><a href="grid.html">Grid</a></li>
+                
+                <li><a href="#">UI / UX</a>
+                    <ul class="submenu">
+                    	<li class="active"><a href="ui.html">General UI</a></li>
+               			<li ><a href="icons.html">Icons</a></li>
+                        <li ><a href="calendar.html">Calendar</a></li>
+                        <li ><a href="file-upload.html">File upload</a></li>
+                        <li ><a href="contact-list.html">Contact list</a></li>
+                    </ul>
+                </li>
+                <li ><a href="typography.html">Typography</a></li>
+                <li ><a href="gallery.html">Gallery</a></li>
+            </ul> <!-- /Nav menu -->
+            
+            <div class="blocks-separator"></div>
+            
+            <h3>Stats</h3>
+            <section class="widgets">
+                
+                <!-- Sidebar Widgets -->
+                <div class="arrow-up">
+                    <span class="title">Sales</span>
+                    <span class="perc"><span data-value="65">0</span>%</span>
+                </div>
+                
+                <div class="arrow-down">
+                    <span class="title">Bounce</span>
+                    <span class="perc"><span data-value="29">0</span>%</span>
+                </div>
+                
+                <div class="arrow-right">
+                    <span class="title">Clients</span>
+                    <span class="perc"><span data-value="0">0</span>%</span>
+                </div>
+                
+                <div class="line-separator"></div>
+                
+                <div class="one-half center">
+	                <input class="knob" data-width="89" data-height="89" data-fgColor="#bee058" data-thickness=".2" data-readOnly="true" value="35" data-value="35">
+                    <span class="full-width center">Disk Space</span>
+                </div>
+                
+                <div class="one-half center">
+	                <input class="knob" data-width="89" data-height="89" data-fgColor="#5479aa" data-thickness=".2" data-readOnly="true" value="83" data-value="83">
+                    <span class="full-width center">Bandwidth</span>
+                </div>
+                <!-- /Sidebar Widgets -->
+                
+                <div class="clear"></div>
+                
+            </section>
+        </nav> <!-- Sidebar -->
+
+        <section id="playground">
+        	
+            <!-- Breadcrumb -->
+            <div class="three-fourths breadcrumb">
+            	<span><a href="#" class="icon entypo home"></a></span>
+                <span class="middle"></span>
+                <span><a href="#">UI &amp; UX</a></span>
+                <span class="middle"></span>
+                <span><a href="#">UI Elements</a></span>
+                <span class="end"></span>
+            </div> <!-- /Breadcrumb -->
+            
+            <!-- Search box -->
+            <div class="one-fourth searchbar">
+            	<div class="box no-bg">
+	            	<div class="search-box closed"><input type="text" /><span class="icon awesome search"></span></div>
+                </div>
+            </div> <!-- /Search box-->
+            
+            <div class="clear"></div>
+            
+            <section class="one-third">
+            	<div class="box no-bg">
+                    <h3>Buttons</h3>
+                    <a href="#" class="button large">class .large</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button medium">class .medium</a> &nbsp;&nbsp;&nbsp;
+	            	<a href="#" class="button tiny">class .tiny</a>
+                    <div class="clear">&nbsp;</div>
+                    <a href="#" class="button light large">class .light.large</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button light medium">class .light.medium</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button light tiny">class .light.tiny</a>
+                    <div class="clear">&nbsp;</div>
+                    <a href="#" class="button blue large">class .blue.large</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button blue medium">class .blue.medium</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button blue tiny">class .blue.tiny</a>
+                    <div class="clear">&nbsp;</div>
+                    <a href="#" class="button red large">class .red.large</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button red medium">class .red.medium</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button red tiny">class .red.tiny</a>
+                    <div class="clear">&nbsp;</div>
+                    <a href="#" class="button green large">class .green.large</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button green medium">class .green.medium</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="button green tiny">class .green.tiny</a>
+                </div>
+            </section>
+            
+            <section class="one-third">
+            	<div class="box no-bg">
+                	<h3>Button container</h3>
+                    <div class="button-container"><a href="#" class="button medium">button</a></div> &nbsp;&nbsp;&nbsp;
+                    <div class="button-container"><a href="#" class="button light medium">button</a></div> &nbsp;&nbsp;&nbsp;
+                    <div class="button-container"><a href="#" class="button blue medium">button</a></div> &nbsp;&nbsp;&nbsp;
+                    <div class="button-container"><a href="#" class="button red medium">button</a></div> &nbsp;&nbsp;&nbsp;
+                    <div class="button-container"><a href="#" class="button green medium">button</a></div>
+                    <div class="clear">&nbsp;</div>
+                    <h3>Button sets</h3>
+                    <div class="button-container">
+                        <div class="button-set">
+                            <a href="#" class="button large first">Prev</a>
+                            <a href="#" class="button large">1</a>
+                            <a href="#" class="button large">2</a>
+                            <a href="#" class="button large">3</a>
+                            <a href="#" class="button large">4</a>
+                            <a href="#" class="button large last">Next</a>
+                        </div>
+                    </div>
+                    <div class="clear">&nbsp;</div>
+                    <div class="button-set">
+                    	<a href="#" class="button tiny blue first"><span class="icon entypo first"></span></a>
+                        <a href="#" class="button tiny blue"><span class="icon entypo fast-backward"></span></a>
+                        <a href="#" class="button tiny blue"><span class="icon entypo stop"></span></a>
+                        <a href="#" class="button tiny blue"><span class="icon entypo fast-forward"></span></a>
+                        <a href="#" class="button tiny blue last"><span class="icon entypo last"></span></a>
+                    </div>
+                    <div class="clear">&nbsp;</div>
+                    <div class="button-container">
+                    	<div class="button-set">
+                        	<a href="#" class="button red first">&lt;</a>
+                            <a href="#" class="button red last">&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="one-third">
+            	<div class="box no-bg">
+                    <h3>Buttons with icons</h3>
+            		<a href="#" class="button blue medium"><span class="icon awesome facebook"></span> share</a> 
+                    <a href="#" class="button red medium"><span class="icon awesome pinterest-sign"></span> pin it!</a> 
+                    <div class="clear">&nbsp;</div>
+                    <a href="#" class="button green tiny"><span class="icon entypo plus"></span> add</a> 
+                    <a href="#" class="button red tiny"><span class="icon entypo minus"></span> delete</a> <br />
+                    <div class="clear">&nbsp;</div>
+                    <a href="#" class="button"><span class="icon entypo chat"></span> Leave a comment</a>
+                </div>
+            </section>
+            
+            <div class="clear"></div>
+            
+            <section class="one-third">
+            	<div class="box no-bg">
+                    <h3>Vertical progress bars</h3>
+                    
+                    <div class="progress-bar vertical blue" data-size="240">
+                    	<span class="complete" data-progress="82"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="progress-bar vertical blue" data-size="240">
+                    	<span class="complete" data-progress="45"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="progress-bar vertical blue" data-size="240">
+                    	<span class="complete" data-progress="67"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="progress-bar vertical blue" data-size="240">
+                    	<span class="complete" data-progress="39"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="progress-bar vertical blue" data-size="240">
+                    	<span class="complete" data-progress="50"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="progress-bar vertical blue" data-size="240">
+                    	<span class="complete" data-progress="78"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="progress-bar vertical blue" data-size="240">
+                    	<span class="complete" data-progress="100"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="progress-bar vertical blue" data-size="240">
+                    	<span class="complete" data-progress="62"></span>
+                        <span class="label"></span>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section class="one-third">
+            	<div class="box no-bg">
+                    <h3>Horizontal progress bars</h3>
+                    
+                    <div class="progress-bar" data-size="400">
+                    	<span class="complete" data-progress="87"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="clear">&nbsp;</div>
+                    <div class="progress-bar red" data-size="440">
+                    	<span class="complete" data-progress="100"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="clear">&nbsp;</div>
+                    <div class="progress-bar light" data-size="300">
+                    	<span class="complete" data-progress="59"></span>
+                        <span class="label"></span>
+                    </div>
+                    <div class="clear">&nbsp;</div>
+                    <div class="progress-bar green" data-size="340">
+                    	<span class="complete" data-progress="100"></span>
+                        <span class="label"></span>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <div class="one-third">
+            	<div class="box">
+                	<div class="inner">
+                    	<div class="titlebar">Tabs</div>
+                        
+                        <div class="tabs-set">
+                            <ul class="tabs">
+                                <li>Tab 1</li>
+                                <li>Tab 2</li>
+                                <li>Tab 3</li>
+                            </ul>
+                            <div class="tab-panel">
+                                <p>Morbi congue, ligula a vehicula molestie, diam elit pellentesque dolor, imperdiet venenatis est libero at sem. Donec ullamcorper hendrerit leo, nec commodo nisi luctus a. Proin velit sapien, porta id interdum sed, cursus quis sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus venenatis dictum metus, et elementum eros tempus sed. Aliquam erat volutpat.</p>
+                            </div>
+                            <div class="tab-panel">
+                                <p>Cras fringilla luctus feugiat. Fusce auctor, nisi id adipiscing molestie, sem quam elementum nibh, et volutpat erat mi id neque. Vestibulum arcu nunc, porttitor molestie rhoncus ac, mattis sed massa. Pellentesque quis ligula ut nisi auctor luctus vel et tellus. Vestibulum a metus eu eros congue malesuada. Integer justo risus, ornare a ultrices nec, rutrum sagittis justo. Donec at turpis magna, eget semper odio. In tempus, nunc a mattis rutrum, enim tellus cursus elit, id lacinia elit justo sit amet justo. Aenean pharetra odio sit amet tortor placerat sagittis. Phasellus auctor interdum diam, ac tempor urna sagittis sit amet.</p>
+                            </div>
+                            <div class="tab-panel">
+                                <p>Sed vitae sollicitudin velit. Phasellus eget ultrices ipsum. Nulla lacinia velit non elit porta id mollis nisl pharetra. Fusce viverra suscipit lacus in gravida. Nulla facilisis, mi non tincidunt vulputate, magna est tincidunt magna, vel tincidunt leo purus eu massa. In sollicitudin sapien quis purus molestie ornare. Nunc eget felis lectus, ac pharetra quam.</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clear"></div>
+            <div class="one-third">
+            	<div class="box no-bg widget-set">
+                	<h3>jGrowl Notifications</h3>
+                	<input type="button" onClick="jQuery('#bottom-left').jGrowl('Bottom Left!');" class="button blue" value="Bottom Left" />
+                    <input type="button" onClick="jQuery('#bottom-right').jGrowl('Bottom Right!');" class="button blue" value="Bottom Right" />
+                    <input type="button" onClick="jQuery('#top-right').jGrowl('Top Right!');" class="button blue" value="Top Right" />
+                    <input type="button" onClick="jQuery('#top-left').jGrowl('Top Left!');" class="button blue" value="Top Left" />
+                </div>
+            </div>
+            <div class="one-third">
+            	<div class="box">
+                	<div class="inner">
+                    	<div class="titlebar">Loading spinners <span class="fright"><img src="img/loading/4.gif" alt=""></span></div>
+                        <div class="contents center">
+                        	<img src="img/loading/1.gif" alt="">&nbsp;&nbsp;
+                            <img src="img/loading/2.gif" alt="">&nbsp;&nbsp;
+                            <img src="img/loading/3.gif" alt="">&nbsp;&nbsp; 
+							<img src="img/loading/4.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/5.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/6.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/7.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/8.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/9.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/10.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/11.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/12.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/13.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/14.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/15.gif" alt="">&nbsp;&nbsp;
+							<img src="img/loading/16.gif" alt=""> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="one-third">
+            	<div class="box no-bg widget-set">
+                	<h3>Modal alerts</h3>
+                	<input type="button" class="button red" id="apprise-1" value="Alert box" />
+					<input type="button" class="button red" id="apprise-2" value="Confirm box" />
+					<input type="button" class="button red" id="apprise-3" value="Prompt box" />
+                </div>
+            </div>
+            
+            <div class="clear"></div>
+            <div class="full-width">
+                <div class="box no-bg widget-set">
+                    <h3>Widgets</h3>
+                    <ul>
+                        <li class="widget arrow-up">
+                            <div class="image"></div>
+                            <label>65%</label>
+                            <span>Sales</span>
+                        </li>
+                        <li class="widget arrow-down">
+                            <div class="image"></div>
+                            <label>5%</label>
+                            <span>Earnings</span>
+                        </li>
+                        <li class="widget arrow-right">
+                            <div class="image"></div>
+                            <label>0%</label>
+                            <span>Votes</span>
+                        </li>
+                        <li class="widget users">
+                            <div class="image"></div>
+                            <label>4</label>
+                            <span>New Users</span>
+                        </li>
+                        <li class="widget comments">
+                            <div class="image"></div>
+                            <label>35</label>
+                            <span>Comments</span>
+                        </li>
+                        <li class="widget orders">
+                            <div class="image"></div>
+                            <label>7</label>
+                            <span>New Orders</span>
+                        </li>
+                        <li class="widget sparkline green">
+                            <div class="sparkline">4,8,16,25,28,35</div>
+                            <label>Visits</label>
+                            <span>last 7 days</span>
+                        </li>
+                        <li class="widget sparkline red">
+                            <div class="sparkline" data-color="#bd5151">51,50,49,32,22,15</div>
+                            <label>Attacks</label>
+                            <span>last 7 days</span>
+                        </li>
+                        <li class="widget sparkline blue">
+                            <div class="sparkline" data-color="#5479aa">20,32,32,32,51,51</div>
+                            <label>Updates</label>
+                            <span>last 7 days</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            
+            <div class="full-width right">
+	<div class="box no-bg">
+    	<div class="line-separator"></div>
+        
+		<span class="copyright">by <a href="http://www.creepypixel.com/" class="creepy-logo fright"></a></span>
+    </div>
+</div>        </section>
+        
+        <div id="bottom-right" class="jGrowl bottom-right"></div>
+    	<div id="bottom-left" class="jGrowl bottom-left"></div>
+        <div id="top-right" class="jGrowl top-right"></div>
+    	<div id="top-left" class="jGrowl top-left"></div>    </div>
+    
+</body> 
+</html>
